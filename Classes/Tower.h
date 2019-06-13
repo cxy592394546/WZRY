@@ -1,10 +1,8 @@
 #pragma once
 
-#include<string>
 #include"cocos2d.h"
 
 USING_NS_CC;
-using namespace std;
 
 #define ATTACK_RADIUS 90
 #define ATK_DAMAGE 250
@@ -23,12 +21,13 @@ public:
 	//攻击速度
 	void setAttackInterval(int attackInterval) { attackSpeed = attackInterval; }
 	int getAttackInterval() { return attackSpeed; }
-	float towerHP;
+	//当前生命
+	float& towerHP;
+	static void minusBlood(int damageNum);
 
-	void initTower();
-
-	float be_attacked(float damage);
+	//是否存在
 	bool destoryed();
+	
 
 private:
 	int _color;
@@ -40,8 +39,6 @@ private:
 	int deathRewardMoney;
 	int deathRewardExp;
 	int attackSpeed = ATTACK_SPEED;
-
-	void minusBlood(int damageNum, Node* attacker);
 
 	void initTower();
 };

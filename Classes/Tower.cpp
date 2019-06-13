@@ -14,7 +14,7 @@ void Tower::initTower(){
 
 }
 
-void Tower::minusBlood(int damageNum, Node* attacker){
+void Tower::minusBlood(int damageNum){
 	if (towerHP - damageNum >= 0) {//Κάµ½Ή¥»χ
 		towerHP -= damageNum;
 	}
