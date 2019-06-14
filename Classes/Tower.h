@@ -1,6 +1,8 @@
 #pragma once
 
 #include"cocos2d.h"
+#include"EnemySoldier.h"
+#include"Money.h"
 
 USING_NS_CC;
 
@@ -36,7 +38,7 @@ private:
 
 	float originBlood = HP;
 
-	int deathRewardMoney;
+	int& deathRewardMoney;
 	int deathRewardExp;
 	int attackSpeed = ATTACK_SPEED;
 

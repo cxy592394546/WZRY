@@ -20,7 +20,7 @@ void Tower::minusBlood(int damageNum){
 	}
 	else {//ÑªÁ¿Îª0
 		towerHP = 0;
-		//enemyReward(deathRewardMoney, deathRewardExp);
+		Money::moneyPlus(deathRewardMoney);
 	}
 }
 

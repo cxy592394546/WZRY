@@ -78,6 +78,6 @@ void EnemySoldier::minusBlood(int damageNum) {
 		SoldierBlood = 0;
 		Moving = false;
 		Attacking = false;
-		//enemyReward(deathRewardMoney, deathRewardExp);
+		Money::moneyPlus(deathRewardMoney);
 	}
 }

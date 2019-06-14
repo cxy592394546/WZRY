@@ -2,6 +2,7 @@
 
 #include"cocos2d.h"
 #include "Tower.h"
+#include"Money.h"
 
 #define HP_0 800
 #define HP_1 1500
@@ -42,7 +43,7 @@ private:
 	float attackRadius;
 	int attackSpeed;
 
-	int deathRewardMoney;	//打死奖励金币数量
+	int& deathRewardMoney;	//打死奖励金币数量
 	int deathRewardExp;		//打死奖励经验的数量
 
 	void minusBlood(int damageNum);
