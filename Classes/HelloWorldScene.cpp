@@ -2,7 +2,7 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 #include "HelpScene.h"
-#include "GameScene.h"
+#include"GameScenes.h"
 
 USING_NS_CC;
 
@@ -105,8 +105,8 @@ void HelloWorld::menuItem1Callback(Ref*pSender)
 	Director::getInstance()->pushScene(sc);
 }
 void HelloWorld::menuItem2Callback(cocos2d::Ref * pSender) {
-	log("play");
-	 auto scene = GameScene::createScene();
+	log("play"); auto scene = GameScenes::createScene();
 	Director::getInstance()->pushScene(scene);
+	
 }
 
