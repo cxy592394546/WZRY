@@ -33,7 +33,7 @@ bool HelpScene::init()
 	auto label3 = Label::createWithSystemFont("choosing your hero among houyi,luban,liubei", "Arial", 10);
 	label3->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2 + 30));
 	this->addChild(label3, 1);
-	auto label4 = Label::createWithSystemFont("pressing Q,W or E to use its skills", "Arial", 10);
+	auto label4 = Label::createWithSystemFont("pressing Q,W ,Eor S to use its skills", "Arial", 10);
 	label4->setPosition(Vec2(origin.x + visibleSize.width / 2, origin.y + visibleSize.height / 2 + 10));
 	this->addChild(label4, 1);
 	auto label5 = Label::createWithSystemFont("Have a nice game!", "Arial", 30);
